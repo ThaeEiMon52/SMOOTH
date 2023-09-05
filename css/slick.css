@@ -1,0 +1,222 @@
+/* Slider */
+.slick-slider {
+
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events:unset;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/*category start */
+.photo img {
+  width: 100%;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.responsive .slide-arrow {
+  position: absolute;
+  top: 46%;
+  margin-top: -15px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.responsive .prev-arrow {
+  left: 8%;
+  z-index: 9;
+  width: 65px;
+  height: 65px;
+  background: url("../img/category/img-left-arrow.png") no-repeat;
+}
+
+.responsive .next-arrow {
+  right: 7.5%;
+  z-index: 9;
+  width: 65px;
+  height: 65px;
+  background: url("../img/category/img-right-arrow.png") no-repeat;
+
+}
+
+
+.responsive .slick-dots li button {
+  font-size: 0;
+}
+
+.responsive .slick-dots li {
+
+  display: inline-block;
+
+}
+
+.responsive .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+  border: 1px solid #ff8800;
+  border-radius: 50%;
+  cursor: pointer;
+
+
+}
+
+
+.responsive .slick-dots {
+  position: absolute;
+  right: 0;
+  bottom: 6.5%;
+  left: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+li.slick-active button {
+  background-color: #ff8800;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .responsive .prev-arrow {
+    left: 5%;
+  }
+
+  .responsive .next-arrow {
+    right: 5.3%;
+  }
+
+  .responsive .slick-dots {
+    bottom: 9%;
+  }
+}
+
+@media screen and (max-width:767.9px) {
+  .responsive .prev-arrow {
+    left: 3.2%;
+  }
+
+  .responsive .next-arrow {
+    right: 3.5%;
+  }
+
+  .responsive .slick-dots {
+    bottom: 9%;
+  }
+}
+
+/*category end */

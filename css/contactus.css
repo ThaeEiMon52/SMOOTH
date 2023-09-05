@@ -1,0 +1,195 @@
+.first-row{
+    background-color:#f7f7f7;
+    padding-bottom:48px;
+}
+.first-row .l-inner .common-ttl{
+    color:#2e2e2e;
+    text-align:left;
+    padding:50px 0 30px 0;
+    font-size: 49px;
+}
+.first-row .l-inner .para-txt{
+    width:516px;
+}
+.first-row .l-inner .txt{
+    color:#2e2e2e;
+   
+}
+.first-row .l-inner .check-list{
+    padding:27px 0 21px 0;
+}
+.first-row .l-inner .check-list li{
+    position: relative;
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 700;
+    padding:0 0 4px 10px;
+
+}
+.first-row .l-inner .check-list li::before{
+    position:absolute;
+    width: 3px;
+    height: 3px;
+    top:20%;
+    left:0;
+    border-radius: 50%;
+    content: " ";
+    background: #2e2e2e;
+}
+.first-row .l-inner .check-list li .color{
+    color:#ff8800;
+}
+
+.first-row .l-inner .contact-info{
+    margin:39px 54px 0 54px;
+    
+}
+.contact-ttl{
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.first-row .l-inner .contact-info .web-site{
+    float:left;
+    width: 516px;
+    height: 259px;
+    margin-right:40px;
+    padding:33px 0 38px 40px;
+    background-color: #ffffff;
+}
+.first-row .l-inner .contact-info .mail{
+    color:#354e57;
+    margin:5px 0 34px 0;
+    text-decoration: underline;
+    font-weight:500;
+}
+.first-row .l-inner .contact-info .address-blk{
+    float:right;
+    width: 516px;
+    height: 259px;
+    padding:33px 0 38px 46px;
+    background-color: #ffffff;
+}
+.first-row .l-inner .contact-info .address-blk .address{
+    font-size: 16px;
+    padding:28px 0;
+    line-height: 24px;
+}
+.first-row .l-inner .contact-info .address-blk .phone{
+  cursor: none;
+  pointer-events: none;
+}
+
+footer {
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+    .pc {
+      display: none;
+    }
+  
+    .tb {
+      display: block;
+    }
+    .contact-ttl{
+        font-size: 2.083vw;
+      }
+    .first-row .l-inner .common-ttl{
+        font-size: 6.38vw;
+    }
+    .first-row .l-inner .para-txt{
+        padding-bottom:1.1vw;
+        width:67.188vw;
+    }
+    .first-row .l-inner .check-list li{
+        font-size: 2.083vw;
+    }
+    .first-row .l-inner .contact-info .web-site{
+
+        float:none;
+        margin:0 auto;
+        padding-bottom:1.5vw;
+        margin-bottom:5vw;
+    }
+    
+    .first-row .l-inner .contact-info .web-site h4{
+        padding-bottom:0.1vw;
+    }
+    .first-row .l-inner .contact-info .mail{
+        font-weight:500;
+    }
+    .first-row .l-inner .contact-info .address-blk{
+        float:none;
+        margin:0 auto;
+        padding-top:4.6vw;
+        margin-bottom:0.1vw;
+    }
+    .first-row .contact-info .address-blk .address{
+        font-size: 2.083vw;
+    }
+}
+@media screen and (max-width:767.9px){
+    body{
+        font-size: 1.563vw;
+    }
+    .pc{
+        display: none;
+       }
+       .tb{
+        display: none;
+       }
+      .sp{
+        display: block;
+      }
+      
+    .l-inner {
+        width: 100%;
+        padding: 0 2.8vw;
+        max-width: 100%;
+        margin:0 auto;
+      }
+    .first-row .l-inner .common-ttl{
+      padding-top:6.38vw;
+      font-size: 7.656vw;
+    }
+    .color{
+        font-size: 2.5vw;
+    }
+    .first-row .l-inner .para-txt{
+        width:80.188vw;
+        font-size: 2.5vw;
+    }
+    .first-row .l-inner .contact-info{
+        padding-top:5.7vw;
+        margin:0 auto;
+    }
+    .first-row .l-inner .check-list li{
+        font-size:2.5vw;
+        padding-bottom:1vw;
+    }
+    
+    .first-row .l-inner .contact-info .web-site{
+       float:none;
+       margin:0 auto;
+       margin-bottom:5.7vw;
+      
+    } 
+    .first-row .l-inner .contact-info .mail{
+        font-size: 2.5vw;
+        font-weight:500;
+    }
+
+    .first-row .l-inner .contact-info .address-blk{
+        float:none;
+        margin:0 auto;
+        margin-bottom:3.1vw;
+    }
+    .first-row .contact-info .address-blk .address{
+        font-size: 2.083vw;
+    }
+    .first-row .contact-info .address-blk .phone{
+        font-size: 2.5vw;
+    }
+    
+
+}
